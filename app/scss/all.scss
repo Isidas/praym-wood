@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+@import "./vendor/variables";
+@import "vendor/_normalize";
+@import "./vendor/_media";
+
+@import "_dialog";
+@import "_header";
+@import "_table";
+@import "_footer";

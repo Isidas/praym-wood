@@ -1,0 +1,62 @@
+// colors
+$black: #000000;
+$orange: #ff5500;
+$grey: #a5a5a5;
+$white: #ffffff;
+
+html {
+  overflow-x: hidden;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  max-width: 1920px;
+  height: 100vh;
+  margin: 0 auto;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+// mixins
+@mixin alignment {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  @media screen and (max-width: 500px) {
+    width: 90%;
+  }
+}
+@mixin tableAlignment {
+  width: 100%;
+  padding: 30px 10px;
+  display: grid;
+  grid-template-columns: 50px repeat(3, 1fr);
+  gap: 20px;
+  @media screen and (max-width: 500px) {
+    grid-template-columns: 20px repeat(3, 1fr);
+    gap: 10px;
+  }
+}
+
+// style elements
+
+.dialog__btn {
+  color: $white;
+  cursor: pointer;
+  margin: 0 3px 0 3px;
+  width: 60px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+.add-item {
+  background-color: $orange;
+}
+.close-dialog {
+  background-color: $grey;
+}
+.hide {
+  display: none;
+}

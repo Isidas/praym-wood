@@ -1,0 +1,13 @@
+@media screen and (max-width: 720px) {
+  .header__title {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .header__title {
+    font-size: 1em;
+  }
+  .header__logo {
+    font-size: 0.8em;
+  }
+}

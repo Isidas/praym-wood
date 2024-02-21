@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.min.css" />
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="header__logo"
+        >STOCK <br />
+        CENTER</a
+      >
+      <h1 class="header__title">Items in stock</h1>
+      <div class="header__burger burger">
+        <div class="burger__line"></div>
+        <div class="burger__line"></div>
+        <div class="burger__line"></div>
+      </div>
+    </header>
+
+    <section class="table">
+      <div class="table__head head">
+        <span class="head__text table__number">#</span>
+        <span class="head__text">Title</span>
+        <span class="head__text">Price, USD</span>
+        <span class="head__text">Date and time</span>
+      </div>
+      <div class="table__items-list"></div>
+    </section>
+    <footer class="footer">
+      <button class="footer__add-item btn-add">New item</button>
+    </footer>
+    <dialog id="modal" class="dialog">
+      <div class="dialog__head">
+        <h3 class="dialog__title">New item</h3>
+        <button class="dialog__btn-close close-dialog">X</button>
+      </div>
+      <div class="dialog__content">
+        <h3 class="dialog__name">Title</h3>
+        <input
+          placeholder="Наименование товара"
+          type="text"
+          class="dialog__input input-title"
+        />
+        <h5 class="dialog__invalid-text hide">Invalid title</h5>
+        <h3 class="dialog__prise">Price</h3>
+        <input
+          placeholder="Цена в долларах и центах"
+          type="number"
+          class="dialog__input input-price"
+        />
+        <h5 class="dialog__invalid-text hide">Invalid price</h5>
+        <h3 class="dialog__date">Date and time</h3>
+        <input
+          placeholder="дд.мм.гггг чч:мм:сс"
+          type="text"
+          class="dialog__input input-date"
+        />
+        <h5 class="dialog__invalid-text hide">Invalid date</h5>
+      </div>
+      <div class="dialog__footer">
+        <button class="dialog__btn close-dialog">Close</button>
+        <button class="dialog__btn add-item">Add</button>
+      </div>
+    </dialog>
+  </body>
+</html>

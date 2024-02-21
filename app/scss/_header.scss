@@ -1,0 +1,25 @@
+.header {
+  @include alignment;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  &__logo {
+    text-decoration: none;
+    color: $black;
+    font-weight: 400;
+  }
+  &__title {
+    color: $orange;
+  }
+  &__burger {
+    cursor: pointer;
+    .burger__line {
+      width: 40px;
+      height: 5px;
+      background-color: $black;
+      border-radius: 3px;
+      margin-top: 5px;
+    }
+  }
+}

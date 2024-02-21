@@ -1,0 +1,19 @@
+.table {
+  @include alignment;
+  flex-direction: column;
+  margin-top: 30px;
+  &__head {
+    @include tableAlignment;
+    border-top: 1px solid $grey;
+    border-bottom: 2px solid $grey;
+  }
+  &__items-list {
+    .table__item {
+      @include tableAlignment;
+      border-top: 1px solid $grey;
+    }
+  }
+  &__number {
+    font-weight: bold;
+  }
+}
